@@ -1,0 +1,25 @@
+name: build and release
+
+on:
+  # build and release on every change. 
+  # if our assets get very large, this might use up our (free) quotas quickly -
+  # but let's wait and worry about that when/if it happens.
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: build
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./bin/build
+      - uses: remarkablegames/setup-butler@v3
+      - env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+        run: ./bin/deploy
