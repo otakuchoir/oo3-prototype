@@ -1,0 +1,21 @@
+#!/bin/bash
+set -eux
+cd "`dirname "$0"`/.."
+V=4.7.2
+
+rm -rf ./build
+mkdir -p ./build/web
+mkdir -p ./build/linux
+mkdir -p ./build/windows
+
+# https://hub.docker.com/r/barichello/godot-ci
+# example: https://github.com/abarichello/godot-ci/blob/master/.github/workflows/godot-ci.yml
+PRESETS=("Web" "Windows Desktop" "Linux")
+for preset in "${PRESETS[@]}"; do
+    docker run --rm \
+        -v "./:/app/" \
+        --workdir /app \
+        barichello/godot-ci:$V \
+        godot --headless --verbose --export-release "$preset"
+done
+echo "success!"

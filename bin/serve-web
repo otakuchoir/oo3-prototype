@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eu
+cd "`dirname "$0"`/../build/web"
+python3 -m http.server
