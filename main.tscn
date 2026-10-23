@@ -1,0 +1,1068 @@
+[gd_scene format=3 uid="uid://brorlfs43mktk"]
+
+[ext_resource type="Texture2D" uid="uid://dby3pix7dnf2v" path="res://assets/oo2/backgrounds/alpine-landscape.png" id="1_4w656"]
+[ext_resource type="Texture2D" uid="uid://cdl3h63irfe6" path="res://assets/oo2/Character Sprites/sanders-angry-1.png" id="2_4w656"]
+[ext_resource type="Texture2D" uid="uid://dve87figy3o5t" path="res://assets/oo2/Character Sprites/usagi-angry.png" id="2_a6jrf"]
+[ext_resource type="Script" uid="uid://diu7w8bpychss" path="res://src/ui/Character.gd" id="2_e71vb"]
+[ext_resource type="Script" uid="uid://tnbsde7bjb1s" path="res://src/ui/DialoguePanel.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dikunry3vtft7" path="res://assets/oo2/Character Sprites/sanders-angry-2.png" id="3_e71vb"]
+[ext_resource type="Texture2D" uid="uid://cjvqh81eawexe" path="res://assets/oo2/Character Sprites/usagi-neutral.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dti5cfeesi8kv" path="res://assets/oo2/Character Sprites/usagi-angry-sweat.png" id="3_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://bgkjubim54a7" path="res://assets/oo2/Character Sprites/usagi-annoyed.png" id="4_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://dwuraeyi4s50f" path="res://assets/oo2/Character Sprites/sanders-angry-3.png" id="4_rnkwl"]
+[ext_resource type="Texture2D" uid="uid://c2lsfop602yka" path="res://assets/oo2/Character Sprites/usagi-anxious.png" id="5_kq58d"]
+[ext_resource type="Texture2D" uid="uid://butfs22hx3p8j" path="res://assets/oo2/Character Sprites/sanders-anxious.png" id="5_vke2r"]
+[ext_resource type="Texture2D" uid="uid://b8ycxwrm5q7pp" path="res://assets/oo2/Character Sprites/usagi-confused.png" id="6_seu75"]
+[ext_resource type="Texture2D" uid="uid://bq7kk3fv8ghyl" path="res://assets/oo2/Character Sprites/sanders-deadpan.png" id="6_uit24"]
+[ext_resource type="Texture2D" uid="uid://cec3ctruywevc" path="res://assets/oo2/Character Sprites/usagi-cry-1.png" id="7_htxhm"]
+[ext_resource type="Texture2D" uid="uid://def74d7y6ehc8" path="res://assets/oo2/Character Sprites/sanders-eyeroll.png" id="7_ruth0"]
+[ext_resource type="Texture2D" uid="uid://cstbrnyx2tfkc" path="res://assets/oo2/Character Sprites/usagi-cry-2.png" id="8_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://2u8lfny88sw8" path="res://assets/oo2/Character Sprites/sanders-faceless.png" id="8_rm4vd"]
+[ext_resource type="Texture2D" uid="uid://d2323fiefa6p5" path="res://assets/oo2/Character Sprites/usagi-cry-3.png" id="9_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://dm7526gui3hn2" path="res://assets/oo2/Character Sprites/sanders-happy.png" id="9_pjyto"]
+[ext_resource type="Texture2D" uid="uid://bt1x1vggiglqk" path="res://assets/oo2/Character Sprites/usagi-derp.png" id="10_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://qra760l3u03n" path="res://assets/oo2/Character Sprites/sanders-neutral.png" id="10_sm6fg"]
+[ext_resource type="Texture2D" uid="uid://cisp34uw18kwc" path="res://assets/oo2/Character Sprites/sanders-panic.png" id="11_b17eg"]
+[ext_resource type="Texture2D" uid="uid://35c2b5nrcaml" path="res://assets/oo2/Character Sprites/usagi-exasperated-2.png" id="11_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://blakspag1f4k8" path="res://assets/oo2/Character Sprites/usagi-exasperated.png" id="12_facbu"]
+[ext_resource type="Texture2D" uid="uid://bik7jwkiot8ls" path="res://assets/oo2/Character Sprites/sanders-prideful.png" id="12_ntx8l"]
+[ext_resource type="Texture2D" uid="uid://dgpdqe417dm4u" path="res://assets/oo2/Character Sprites/usagi-excited.png" id="13_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://dbqrxy1u1163p" path="res://assets/oo2/Character Sprites/sanders-shock.png" id="13_uatky"]
+[ext_resource type="Texture2D" uid="uid://vsgqr0bt8d60" path="res://assets/oo2/Character Sprites/usagi-faceless.png" id="14_come4"]
+[ext_resource type="Texture2D" uid="uid://dcvkjjps16r0w" path="res://assets/oo2/Character Sprites/sanders-smug.png" id="14_rqtf5"]
+[ext_resource type="Texture2D" uid="uid://84dyqqfb7dva" path="res://assets/oo2/Character Sprites/sanders-teasing.png" id="15_1vm84"]
+[ext_resource type="Texture2D" uid="uid://csx3b46jwhkik" path="res://assets/oo2/Character Sprites/usagi-frog.png" id="15_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://daxrl0ilbf062" path="res://assets/oo2/Character Sprites/usagi-happy-1.png" id="16_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://cq1r1vxp6r7ba" path="res://assets/oo2/Character Sprites/takeshi-angry-1.png" id="16_wu3dr"]
+[ext_resource type="Texture2D" uid="uid://4u0boa5vw30v" path="res://assets/oo2/Character Sprites/usagi-happy-2.png" id="17_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://dmaq0ffcoauao" path="res://assets/oo2/Character Sprites/takeshi-angry-2.png" id="17_cyx1q"]
+[ext_resource type="Texture2D" uid="uid://xh22vmulp6dg" path="res://assets/oo2/Character Sprites/takeshi-angry-3.png" id="18_0dhbp"]
+[ext_resource type="Texture2D" uid="uid://c8p7ss8k6jkgt" path="res://assets/oo2/Character Sprites/usagi-hello.png" id="18_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://bn0wnn5q8fc0x" path="res://assets/oo2/Character Sprites/takeshi-annoyed.png" id="19_jx0wj"]
+[ext_resource type="Texture2D" uid="uid://cm3yc885aoj6c" path="res://assets/oo2/Character Sprites/usagi-sad.png" id="20_gngh3"]
+[ext_resource type="Texture2D" uid="uid://sc2rrd4saj1j" path="res://assets/oo2/Character Sprites/takeshi-faceless.png" id="20_kkkcx"]
+[ext_resource type="Texture2D" uid="uid://d4bctbkxld3m" path="res://assets/oo2/Character Sprites/usagi-serious-1.png" id="21_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://bih0ppebgv26x" path="res://assets/oo2/Character Sprites/takeshi-happy-1.png" id="21_34ol3"]
+[ext_resource type="Texture2D" uid="uid://cilcipwxty4ls" path="res://assets/oo2/Character Sprites/takeshi-happy-2.png" id="22_c2n8d"]
+[ext_resource type="Texture2D" uid="uid://crwk7b6jnf2d8" path="res://assets/oo2/Character Sprites/usagi-serious-2.png" id="22_qnost"]
+[ext_resource type="Texture2D" uid="uid://cddnw370achto" path="res://assets/oo2/Character Sprites/usagi-shock.png" id="23_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://bxbtswtrr8roy" path="res://assets/oo2/Character Sprites/takeshi-neutral.png" id="23_wy5fy"]
+[ext_resource type="Texture2D" uid="uid://f1qp0ixwmb1f" path="res://assets/oo2/Character Sprites/usagi-smug.png" id="24_f6a44"]
+[ext_resource type="Texture2D" uid="uid://ccg8fmm8h66oe" path="res://assets/oo2/Character Sprites/takeshi-panic-1.png" id="24_gx4rg"]
+[ext_resource type="Texture2D" uid="uid://ccf6qqqlwhvrq" path="res://assets/oo2/Character Sprites/usagi-weary.png" id="25_0cbny"]
+[ext_resource type="Texture2D" uid="uid://bd3pvxbngmje" path="res://assets/oo2/Character Sprites/takeshi-panic-2.png" id="25_5dllo"]
+[ext_resource type="Texture2D" uid="uid://rm4ty5quvnmf" path="res://assets/oo2/Character Sprites/usagi-worried.png" id="26_hrvbo"]
+[ext_resource type="Texture2D" uid="uid://bcc6i7tdqvijh" path="res://assets/oo2/Character Sprites/takeshi-shock.png" id="26_phcyf"]
+[ext_resource type="Texture2D" uid="uid://v0m3iv772jdu" path="res://assets/oo2/Character Sprites/takeshi-worried-1.png" id="27_birbe"]
+[ext_resource type="Texture2D" uid="uid://d38bph63o644o" path="res://assets/oo2/Character Sprites/takeshi-worried-2.png" id="28_f1p13"]
+[ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/ui/animation_player.gd" id="29_qsp4k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4obbf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4w656")
+}],
+"loop": 1,
+"name": &"angry-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_e71vb")
+}],
+"loop": 1,
+"name": &"angry-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_rnkwl")
+}],
+"loop": 1,
+"name": &"angry-3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_vke2r")
+}],
+"loop": 1,
+"name": &"anxious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_uit24")
+}],
+"loop": 1,
+"name": &"deadpan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ruth0")
+}],
+"loop": 1,
+"name": &"eyeroll",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_rm4vd")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_pjyto")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_sm6fg")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_b17eg")
+}],
+"loop": 1,
+"name": &"panic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ntx8l")
+}],
+"loop": 1,
+"name": &"prideful",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_uatky")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_rqtf5")
+}],
+"loop": 1,
+"name": &"smug",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_1vm84")
+}],
+"loop": 1,
+"name": &"teasing",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovcoh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_wu3dr")
+}],
+"loop": 1,
+"name": &"angry-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_cyx1q")
+}],
+"loop": 1,
+"name": &"angry-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_0dhbp")
+}],
+"loop": 1,
+"name": &"angry-3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_jx0wj")
+}],
+"loop": 1,
+"name": &"annoyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_kkkcx")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_34ol3")
+}],
+"loop": 1,
+"name": &"happy-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_c2n8d")
+}],
+"loop": 1,
+"name": &"happy-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_wy5fy")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_gx4rg")
+}],
+"loop": 1,
+"name": &"panic-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_5dllo")
+}],
+"loop": 1,
+"name": &"panic-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_phcyf")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_birbe")
+}],
+"loop": 1,
+"name": &"worried-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_f1p13")
+}],
+"loop": 1,
+"name": &"worried-2",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wnsco"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a6jrf")
+}],
+"loop": 1,
+"name": &"angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_xuqvo")
+}],
+"loop": 1,
+"name": &"angry sweat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_qsp4k")
+}],
+"loop": 1,
+"name": &"annoyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_kq58d")
+}],
+"loop": 1,
+"name": &"anxious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_seu75")
+}],
+"loop": 1,
+"name": &"confused",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_htxhm")
+}],
+"loop": 1,
+"name": &"cry 1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jq2sk")
+}],
+"loop": 1,
+"name": &"cry 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_4k2k6")
+}],
+"loop": 1,
+"name": &"cry 3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_0rl1p")
+}],
+"loop": 1,
+"name": &"derp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_facbu")
+}],
+"loop": 1,
+"name": &"exasperated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ok6jj")
+}],
+"loop": 1,
+"name": &"exasperated 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_b1qrp")
+}],
+"loop": 1,
+"name": &"excited",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_come4")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_h8e4i")
+}],
+"loop": 1,
+"name": &"frog",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_4lmeg")
+}],
+"loop": 1,
+"name": &"happy 1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_0cp0l")
+}],
+"loop": 1,
+"name": &"happy 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_d2t1y")
+}],
+"loop": 1,
+"name": &"hello",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h2yge")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_gngh3")
+}],
+"loop": 1,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_0n3wm")
+}],
+"loop": 1,
+"name": &"serious 1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_qnost")
+}],
+"loop": 1,
+"name": &"serious 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_wnkbs")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_f6a44")
+}],
+"loop": 1,
+"name": &"smug",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_0cbny")
+}],
+"loop": 1,
+"name": &"weary",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_hrvbo")
+}],
+"loop": 1,
+"name": &"worried",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_4w656"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stage/Usagi:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1560, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Stage/Usagi:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Stage/Usagi/AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"neutral"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stage/Sanders:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-176, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Stage/Sanders:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Stage/Sanders/AnimatedSprite2D:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [&"neutral"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Stage/Sanders:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-176.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../Stage/Sanders:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../Stage/Takeshi:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1704, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../Stage/Takeshi:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../Stage/Takeshi/AnimatedSprite2D:animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"neutral"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../Stage/Takeshi/AnimatedSprite2D:position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("../Stage/Usagi:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("../Stage/Usagi:position:x")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1699.0272]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("../Stage/Usagi:position:y")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_a6jrf"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stage/Usagi:position:x")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1699.0272, 720.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Stage/Usagi/AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"neutral", &"happy 2"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Stage/Usagi:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xuqvo"]
+resource_name = "2 takeshi enter"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stage/Usagi:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(712, 0), Vector2(1700, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Stage/Usagi/AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"happy 2", &"neutral"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Stage/Usagi:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stage/Sanders:position:x")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-176.0, 720.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Stage/Sanders:position:y")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5, 0.6666667, 0.8333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -150.0, 0.0, -150.0, 0.0, -150.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Stage/Sanders:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Stage/Sanders/AnimatedSprite2D:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [&"neutral", &"smug"]
+}
+
+[sub_resource type="Animation" id="Animation_e71vb"]
+resource_name = "line004 takeshi enter"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stage/Takeshi:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1700, -100), Vector2(720, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Stage/Takeshi/AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"neutral", &"happy-2"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Stage/Takeshi:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stage/Sanders:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(720, 0), Vector2(-176, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Stage/Sanders:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Stage/Sanders/AnimatedSprite2D:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.13333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [&"smug", &"neutral"]
+}
+
+[sub_resource type="Animation" id="Animation_rnkwl"]
+resource_name = "line007 usagi enter"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stage/Usagi:position:x")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1699.0272, 720.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Stage/Usagi/AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"neutral", &"happy 2"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Stage/Usagi:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stage/Takeshi:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(720, -100), Vector2(-300, -100)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Stage/Takeshi/AnimatedSprite2D:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"neutral", &"happy-2"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Stage/Usagi:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [18.84955592153876, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Stage/Usagi:position:y")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-300.0, -200.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uypp3"]
+_data = {
+&"RESET": SubResource("Animation_4w656"),
+&"oo3-prototype.001 usagi enter": SubResource("Animation_a6jrf"),
+&"oo3-prototype.003 sanders enter": SubResource("Animation_xuqvo"),
+&"oo3-prototype.006 takeshi enter": SubResource("Animation_e71vb"),
+&"oo3-prototype.008 usagi enter": SubResource("Animation_rnkwl")
+}
+
+[sub_resource type="Animation" id="Animation_vke2r"]
+resource_name = "oo3-prototype.006 takeshi hover"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Stage/Takeshi/AnimatedSprite2D:position:y")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-150.0, 150.0, -150.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uit24"]
+_data = {
+&"oo3-prototype.006 takeshi hover": SubResource("Animation_vke2r")
+}
+
+[node name="main" type="Node2D" unique_id=356806134]
+
+[node name="bg" type="Sprite2D" parent="." unique_id=833898978]
+position = Vector2(720, 540)
+scale = Vector2(0.703125, 0.703125)
+texture = ExtResource("1_4w656")
+
+[node name="Stage" type="Node2D" parent="." unique_id=46153292]
+position = Vector2(0, 789)
+
+[node name="Sanders" type="Node2D" parent="Stage" unique_id=736106436]
+position = Vector2(-176, 0)
+scale = Vector2(-1, 1)
+script = ExtResource("2_e71vb")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stage/Sanders" unique_id=298371232]
+sprite_frames = SubResource("SpriteFrames_4obbf")
+animation = &"neutral"
+offset = Vector2(0, -225)
+
+[node name="Takeshi" type="Node2D" parent="Stage" unique_id=436600023]
+position = Vector2(1704, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stage/Takeshi" unique_id=506541311]
+sprite_frames = SubResource("SpriteFrames_ovcoh")
+animation = &"neutral"
+offset = Vector2(0, -200)
+
+[node name="Usagi" type="Node2D" parent="Stage" unique_id=530479892]
+position = Vector2(1560, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stage/Usagi" unique_id=149602492]
+sprite_frames = SubResource("SpriteFrames_wnsco")
+animation = &"neutral"
+offset = Vector2(0, -158)
+
+[node name="DialoguePanel" type="Node2D" parent="Stage" unique_id=1152993684]
+position = Vector2(0, 3)
+script = ExtResource("2_h2yge")
+
+[node name="bg" type="ColorRect" parent="Stage/DialoguePanel" unique_id=110631275]
+offset_right = 1440.0
+offset_bottom = 291.0
+mouse_filter = 1
+color = Color(0.47, 0.47, 0.47, 0.8980392)
+metadata/_edit_use_anchors_ = true
+
+[node name="quote" type="Label" parent="Stage/DialoguePanel" unique_id=1443675600]
+offset_left = 80.0
+offset_top = 38.0
+offset_right = 284.0
+offset_bottom = 118.0
+text = "PLACEHOLDER: quote"
+
+[node name="speaker" type="Label" parent="Stage/DialoguePanel" unique_id=1401217067]
+offset_left = 81.0
+offset_top = 3.0
+offset_right = 186.0
+offset_bottom = 26.0
+text = "PLACEHOLDER: speaker"
+
+[node name="line_id" type="Label" parent="Stage/DialoguePanel" unique_id=525651814]
+offset_left = 88.0
+offset_top = 256.0
+offset_right = 271.0
+offset_bottom = 279.0
+text = "PLACEHOLDER: line-id"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=564061918]
+root_node = NodePath(".")
+libraries/ = SubResource("AnimationLibrary_uypp3")
+script = ExtResource("29_qsp4k")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=2079344130]
+libraries/ = SubResource("AnimationLibrary_uit24")
+script = ExtResource("29_qsp4k")
