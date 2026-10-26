@@ -31,6 +31,7 @@ func generate(name: String, dirname: String,  prefix: String, unprefix: String="
 			anim.add_frame(animname, img)
 			dim = img.get_size() # we assume all frames are the same dimensions
 	anim.remove_animation("default")
+	ResourceSaver.save(anim, "res://res/"+name+".tres")
 	
 	var root = EditorInterface.get_edited_scene_root()
 	var node = Node2D.new()
@@ -39,6 +40,7 @@ func generate(name: String, dirname: String,  prefix: String, unprefix: String="
 	node.owner = root
 	
 	var sprite = AnimatedSprite2D.new()
+	
 	sprite.sprite_frames = anim
 	sprite.name = "AnimatedSprite2D"
 	sprite.centered = true

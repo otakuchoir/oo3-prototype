@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bvpql2j20kxvr"]
+
+[node name="Stage" type="Node2D" unique_id=2103185016]
+position = Vector2(0, 789)

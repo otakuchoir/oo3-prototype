@@ -1,0 +1,131 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://foixxdqpn7es"]
+
+[ext_resource type="Texture2D" uid="uid://b70nvyi2rk6mx" path="res://assets/oo2/Character Sprites/sanders-postgrad-angry-1.png" id="1_67nat"]
+[ext_resource type="Texture2D" uid="uid://f56g7tdwdyqx" path="res://assets/oo2/Character Sprites/sanders-postgrad-angry-2.png" id="2_y68gv"]
+[ext_resource type="Texture2D" uid="uid://bpnuc278qladx" path="res://assets/oo2/Character Sprites/sanders-postgrad-angry-3.png" id="3_ot7yh"]
+[ext_resource type="Texture2D" uid="uid://dtmwl5adt8s57" path="res://assets/oo2/Character Sprites/sanders-postgrad-anxious.png" id="4_ld1v0"]
+[ext_resource type="Texture2D" uid="uid://dd6eyuubbu0vm" path="res://assets/oo2/Character Sprites/sanders-postgrad-deadpan.png" id="5_yey28"]
+[ext_resource type="Texture2D" uid="uid://c7m2x0iqoarhs" path="res://assets/oo2/Character Sprites/sanders-postgrad-eyeroll.png" id="6_lnyt7"]
+[ext_resource type="Texture2D" uid="uid://5mwa4qrjuftq" path="res://assets/oo2/Character Sprites/sanders-postgrad-faceless.png" id="7_das3t"]
+[ext_resource type="Texture2D" uid="uid://cnh2desx1rsl1" path="res://assets/oo2/Character Sprites/sanders-postgrad-happy.png" id="8_bayl4"]
+[ext_resource type="Texture2D" uid="uid://upy3afxdp6av" path="res://assets/oo2/Character Sprites/sanders-postgrad-neutral.png" id="9_kq8ge"]
+[ext_resource type="Texture2D" uid="uid://bbsopjms70ggg" path="res://assets/oo2/Character Sprites/sanders-postgrad-panic.png" id="10_kq4ix"]
+[ext_resource type="Texture2D" uid="uid://odiety57174m" path="res://assets/oo2/Character Sprites/sanders-postgrad-prideful.png" id="11_dqqg5"]
+[ext_resource type="Texture2D" uid="uid://yk8wo36u5qvr" path="res://assets/oo2/Character Sprites/sanders-postgrad-shock.png" id="12_ix0c5"]
+[ext_resource type="Texture2D" uid="uid://cyw6fvgo8bifv" path="res://assets/oo2/Character Sprites/sanders-postgrad-smug.png" id="13_akcc4"]
+[ext_resource type="Texture2D" uid="uid://c1qi565iq3ay7" path="res://assets/oo2/Character Sprites/sanders-postgrad-teasing.png" id="14_idrnn"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_67nat")
+}],
+"loop": 1,
+"name": &"angry-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y68gv")
+}],
+"loop": 1,
+"name": &"angry-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ot7yh")
+}],
+"loop": 1,
+"name": &"angry-3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ld1v0")
+}],
+"loop": 1,
+"name": &"anxious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yey28")
+}],
+"loop": 1,
+"name": &"deadpan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_lnyt7")
+}],
+"loop": 1,
+"name": &"eyeroll",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_das3t")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_bayl4")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_kq8ge")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_kq4ix")
+}],
+"loop": 1,
+"name": &"panic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_dqqg5")
+}],
+"loop": 1,
+"name": &"prideful",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ix0c5")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_akcc4")
+}],
+"loop": 1,
+"name": &"smug",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_idrnn")
+}],
+"loop": 1,
+"name": &"teasing",
+"speed": 5.0
+}]

@@ -1,0 +1,257 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dteu3qqonwfti"]
+
+[ext_resource type="Texture2D" uid="uid://dve87figy3o5t" path="res://assets/oo2/Character Sprites/usagi-angry.png" id="1_v21rw"]
+[ext_resource type="Texture2D" uid="uid://dti5cfeesi8kv" path="res://assets/oo2/Character Sprites/usagi-angry-sweat.png" id="2_jhfin"]
+[ext_resource type="Texture2D" uid="uid://bgkjubim54a7" path="res://assets/oo2/Character Sprites/usagi-annoyed.png" id="3_o3mbx"]
+[ext_resource type="Texture2D" uid="uid://c2lsfop602yka" path="res://assets/oo2/Character Sprites/usagi-anxious.png" id="4_3chbh"]
+[ext_resource type="Texture2D" uid="uid://b8ycxwrm5q7pp" path="res://assets/oo2/Character Sprites/usagi-confused.png" id="5_k0nl8"]
+[ext_resource type="Texture2D" uid="uid://cec3ctruywevc" path="res://assets/oo2/Character Sprites/usagi-cry-1.png" id="6_jyd2w"]
+[ext_resource type="Texture2D" uid="uid://cstbrnyx2tfkc" path="res://assets/oo2/Character Sprites/usagi-cry-2.png" id="7_eq3hf"]
+[ext_resource type="Texture2D" uid="uid://d2323fiefa6p5" path="res://assets/oo2/Character Sprites/usagi-cry-3.png" id="8_kmjpn"]
+[ext_resource type="Texture2D" uid="uid://bt1x1vggiglqk" path="res://assets/oo2/Character Sprites/usagi-derp.png" id="9_4ihqm"]
+[ext_resource type="Texture2D" uid="uid://blakspag1f4k8" path="res://assets/oo2/Character Sprites/usagi-exasperated.png" id="10_wiswv"]
+[ext_resource type="Texture2D" uid="uid://35c2b5nrcaml" path="res://assets/oo2/Character Sprites/usagi-exasperated-2.png" id="11_8yppb"]
+[ext_resource type="Texture2D" uid="uid://dgpdqe417dm4u" path="res://assets/oo2/Character Sprites/usagi-excited.png" id="12_vje4s"]
+[ext_resource type="Texture2D" uid="uid://vsgqr0bt8d60" path="res://assets/oo2/Character Sprites/usagi-faceless.png" id="13_hohh7"]
+[ext_resource type="Texture2D" uid="uid://csx3b46jwhkik" path="res://assets/oo2/Character Sprites/usagi-frog.png" id="14_7db1h"]
+[ext_resource type="Texture2D" uid="uid://daxrl0ilbf062" path="res://assets/oo2/Character Sprites/usagi-happy-1.png" id="15_16ovs"]
+[ext_resource type="Texture2D" uid="uid://4u0boa5vw30v" path="res://assets/oo2/Character Sprites/usagi-happy-2.png" id="16_fosrk"]
+[ext_resource type="Texture2D" uid="uid://c8p7ss8k6jkgt" path="res://assets/oo2/Character Sprites/usagi-hello.png" id="17_nsmnt"]
+[ext_resource type="Texture2D" uid="uid://cjvqh81eawexe" path="res://assets/oo2/Character Sprites/usagi-neutral.png" id="18_7vqx7"]
+[ext_resource type="Texture2D" uid="uid://cm3yc885aoj6c" path="res://assets/oo2/Character Sprites/usagi-sad.png" id="19_bt1o7"]
+[ext_resource type="Texture2D" uid="uid://d4bctbkxld3m" path="res://assets/oo2/Character Sprites/usagi-serious-1.png" id="20_v5x47"]
+[ext_resource type="Texture2D" uid="uid://crwk7b6jnf2d8" path="res://assets/oo2/Character Sprites/usagi-serious-2.png" id="21_73uio"]
+[ext_resource type="Texture2D" uid="uid://cddnw370achto" path="res://assets/oo2/Character Sprites/usagi-shock.png" id="22_3tcjv"]
+[ext_resource type="Texture2D" uid="uid://f1qp0ixwmb1f" path="res://assets/oo2/Character Sprites/usagi-smug.png" id="23_yq5fy"]
+[ext_resource type="Texture2D" uid="uid://ccf6qqqlwhvrq" path="res://assets/oo2/Character Sprites/usagi-weary.png" id="24_k0sk4"]
+[ext_resource type="Texture2D" uid="uid://rm4ty5quvnmf" path="res://assets/oo2/Character Sprites/usagi-worried.png" id="25_kclbx"]
+[ext_resource type="Texture2D" uid="uid://bkpwh81o0yx3t" path="res://assets/oo2/Character Sprites/usagi-young-faceless.png" id="26_3yghl"]
+[ext_resource type="Texture2D" uid="uid://dm14866np670m" path="res://assets/oo2/Character Sprites/usagi-young-happy.png" id="27_6ts6d"]
+[ext_resource type="Texture2D" uid="uid://csohj3we52qfv" path="res://assets/oo2/Character Sprites/usagi-young-sleepy.png" id="28_pag71"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_v21rw")
+}],
+"loop": 1,
+"name": &"angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jhfin")
+}],
+"loop": 1,
+"name": &"angry-sweat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_o3mbx")
+}],
+"loop": 1,
+"name": &"annoyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_3chbh")
+}],
+"loop": 1,
+"name": &"anxious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_k0nl8")
+}],
+"loop": 1,
+"name": &"confused",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_jyd2w")
+}],
+"loop": 1,
+"name": &"cry-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_eq3hf")
+}],
+"loop": 1,
+"name": &"cry-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_kmjpn")
+}],
+"loop": 1,
+"name": &"cry-3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_4ihqm")
+}],
+"loop": 1,
+"name": &"derp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_wiswv")
+}],
+"loop": 1,
+"name": &"exasperated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_8yppb")
+}],
+"loop": 1,
+"name": &"exasperated-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_vje4s")
+}],
+"loop": 1,
+"name": &"excited",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_hohh7")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_7db1h")
+}],
+"loop": 1,
+"name": &"frog",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_16ovs")
+}],
+"loop": 1,
+"name": &"happy-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_fosrk")
+}],
+"loop": 1,
+"name": &"happy-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_nsmnt")
+}],
+"loop": 1,
+"name": &"hello",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_7vqx7")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_bt1o7")
+}],
+"loop": 1,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_v5x47")
+}],
+"loop": 1,
+"name": &"serious-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_73uio")
+}],
+"loop": 1,
+"name": &"serious-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_3tcjv")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_yq5fy")
+}],
+"loop": 1,
+"name": &"smug",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_k0sk4")
+}],
+"loop": 1,
+"name": &"weary",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_kclbx")
+}],
+"loop": 1,
+"name": &"worried",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_3yghl")
+}],
+"loop": 1,
+"name": &"young-faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_6ts6d")
+}],
+"loop": 1,
+"name": &"young-happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_pag71")
+}],
+"loop": 1,
+"name": &"young-sleepy",
+"speed": 5.0
+}]

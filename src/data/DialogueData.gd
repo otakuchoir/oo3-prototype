@@ -9,17 +9,22 @@ static func read_json(path: String) -> DialogueData:
 	var json = JSON.parse_string(txt)
 	assert(!!json, "dialogue is not valid json: "+path)
 	var ret = DialogueData.new()
-	ret.data.assign(range(json.data.size())
-		.filter(func(i): return json.data[i].type == "quote")
-		.map(func(i):
-			var jsonline = json.data[i]
-			var line = DialogueLine.new()
-			line.quote = jsonline.quote
-			line.speaker = jsonline.speaker
-			line.id = "oo3-prototype.%03s" % jsonline.id
-			return line
-			)
-	)
+	
+	# prefix line-ids with their label
+	var label = "UNLABELED"  # TODO this should probably throw an error instead
+	for i in range(json.data.size()):
+		var jsonline = json.data[i]
+		match jsonline.type:
+			"label":
+				label = jsonline.label
+			"quote":
+				var line = DialogueLine.new()
+				line.quote = jsonline.quote
+				line.speaker = jsonline.speaker
+				line.id = "%s.%03s" % [label, jsonline.id]
+				ret.data.append(line)
+			_:
+				print("unknown dialogue-file line type: %s" % jsonline.type)
 	return ret
 
 func _to_string() -> String:

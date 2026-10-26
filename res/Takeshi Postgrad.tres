@@ -1,0 +1,158 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cpib5egnfcjgl"]
+
+[ext_resource type="Texture2D" uid="uid://d10tndpjbwyxl" path="res://assets/oo2/Character Sprites/takeshi-postgrad-angry-1.png" id="1_x0pof"]
+[ext_resource type="Texture2D" uid="uid://c50t048vyfjig" path="res://assets/oo2/Character Sprites/takeshi-postgrad-angry-1-holo.png" id="2_ml1v3"]
+[ext_resource type="Texture2D" uid="uid://bq6tlbdqwe2ms" path="res://assets/oo2/Character Sprites/takeshi-postgrad-angry-2.png" id="3_pv5hr"]
+[ext_resource type="Texture2D" uid="uid://y51qjp38gb4b" path="res://assets/oo2/Character Sprites/takeshi-postgrad-angry-3.png" id="4_ytq6x"]
+[ext_resource type="Texture2D" uid="uid://c1qajxlrmgtty" path="res://assets/oo2/Character Sprites/takeshi-postgrad-annoyed.png" id="5_ewccn"]
+[ext_resource type="Texture2D" uid="uid://batmjkdjpa5q4" path="res://assets/oo2/Character Sprites/takeshi-postgrad-faceless.png" id="6_cpx6l"]
+[ext_resource type="Texture2D" uid="uid://du223o247xbps" path="res://assets/oo2/Character Sprites/takeshi-postgrad-happy-1.png" id="7_06hfm"]
+[ext_resource type="Texture2D" uid="uid://vqd2xsmhat25" path="res://assets/oo2/Character Sprites/takeshi-postgrad-happy-1-holo.png" id="8_ueyhg"]
+[ext_resource type="Texture2D" uid="uid://br8nf1e8j013m" path="res://assets/oo2/Character Sprites/takeshi-postgrad-happy-2.png" id="9_hnb2p"]
+[ext_resource type="Texture2D" uid="uid://dtoov22agbra0" path="res://assets/oo2/Character Sprites/takeshi-postgrad-neutral.png" id="10_o4myd"]
+[ext_resource type="Texture2D" uid="uid://bf5s8caor4pdo" path="res://assets/oo2/Character Sprites/takeshi-postgrad-neutral-holo.png" id="11_mbc3o"]
+[ext_resource type="Texture2D" uid="uid://bgg17x6m4k713" path="res://assets/oo2/Character Sprites/takeshi-postgrad-panic-1.png" id="12_6j46g"]
+[ext_resource type="Texture2D" uid="uid://dr2x4kpydqlur" path="res://assets/oo2/Character Sprites/takeshi-postgrad-panic-2.png" id="13_8sotw"]
+[ext_resource type="Texture2D" uid="uid://bceoyqqhoep21" path="res://assets/oo2/Character Sprites/takeshi-postgrad-shock.png" id="14_lsdqp"]
+[ext_resource type="Texture2D" uid="uid://b0exrd4d86qr4" path="res://assets/oo2/Character Sprites/takeshi-postgrad-worried-1.png" id="15_v8sd4"]
+[ext_resource type="Texture2D" uid="uid://bgbkkix5klwf4" path="res://assets/oo2/Character Sprites/takeshi-postgrad-worried-1-holo.png" id="16_415ac"]
+[ext_resource type="Texture2D" uid="uid://e6jxn85aherm" path="res://assets/oo2/Character Sprites/takeshi-postgrad-worried-2.png" id="17_gfciq"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x0pof")
+}],
+"loop": 1,
+"name": &"angry-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ml1v3")
+}],
+"loop": 1,
+"name": &"angry-1-holo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_pv5hr")
+}],
+"loop": 1,
+"name": &"angry-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ytq6x")
+}],
+"loop": 1,
+"name": &"angry-3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ewccn")
+}],
+"loop": 1,
+"name": &"annoyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_cpx6l")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_06hfm")
+}],
+"loop": 1,
+"name": &"happy-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ueyhg")
+}],
+"loop": 1,
+"name": &"happy-1-holo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_hnb2p")
+}],
+"loop": 1,
+"name": &"happy-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_o4myd")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_mbc3o")
+}],
+"loop": 1,
+"name": &"neutral-holo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_6j46g")
+}],
+"loop": 1,
+"name": &"panic-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_8sotw")
+}],
+"loop": 1,
+"name": &"panic-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_lsdqp")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_v8sd4")
+}],
+"loop": 1,
+"name": &"worried-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_415ac")
+}],
+"loop": 1,
+"name": &"worried-1-holo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_gfciq")
+}],
+"loop": 1,
+"name": &"worried-2",
+"speed": 5.0
+}]

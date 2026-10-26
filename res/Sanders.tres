@@ -1,0 +1,131 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ch84u214eqv8v"]
+
+[ext_resource type="Texture2D" uid="uid://cdl3h63irfe6" path="res://assets/oo2/Character Sprites/sanders-angry-1.png" id="1_pqcau"]
+[ext_resource type="Texture2D" uid="uid://dikunry3vtft7" path="res://assets/oo2/Character Sprites/sanders-angry-2.png" id="2_r12qd"]
+[ext_resource type="Texture2D" uid="uid://dwuraeyi4s50f" path="res://assets/oo2/Character Sprites/sanders-angry-3.png" id="3_hvlrb"]
+[ext_resource type="Texture2D" uid="uid://butfs22hx3p8j" path="res://assets/oo2/Character Sprites/sanders-anxious.png" id="4_8fer7"]
+[ext_resource type="Texture2D" uid="uid://bq7kk3fv8ghyl" path="res://assets/oo2/Character Sprites/sanders-deadpan.png" id="5_yddby"]
+[ext_resource type="Texture2D" uid="uid://def74d7y6ehc8" path="res://assets/oo2/Character Sprites/sanders-eyeroll.png" id="6_igip3"]
+[ext_resource type="Texture2D" uid="uid://2u8lfny88sw8" path="res://assets/oo2/Character Sprites/sanders-faceless.png" id="7_tsaw4"]
+[ext_resource type="Texture2D" uid="uid://dm7526gui3hn2" path="res://assets/oo2/Character Sprites/sanders-happy.png" id="8_h0u0x"]
+[ext_resource type="Texture2D" uid="uid://qra760l3u03n" path="res://assets/oo2/Character Sprites/sanders-neutral.png" id="9_2r6e7"]
+[ext_resource type="Texture2D" uid="uid://cisp34uw18kwc" path="res://assets/oo2/Character Sprites/sanders-panic.png" id="10_bctdw"]
+[ext_resource type="Texture2D" uid="uid://bik7jwkiot8ls" path="res://assets/oo2/Character Sprites/sanders-prideful.png" id="11_byopa"]
+[ext_resource type="Texture2D" uid="uid://dbqrxy1u1163p" path="res://assets/oo2/Character Sprites/sanders-shock.png" id="12_bd4w2"]
+[ext_resource type="Texture2D" uid="uid://dcvkjjps16r0w" path="res://assets/oo2/Character Sprites/sanders-smug.png" id="13_0qrn5"]
+[ext_resource type="Texture2D" uid="uid://84dyqqfb7dva" path="res://assets/oo2/Character Sprites/sanders-teasing.png" id="14_d1xq2"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pqcau")
+}],
+"loop": 1,
+"name": &"angry-1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_r12qd")
+}],
+"loop": 1,
+"name": &"angry-2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hvlrb")
+}],
+"loop": 1,
+"name": &"angry-3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8fer7")
+}],
+"loop": 1,
+"name": &"anxious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yddby")
+}],
+"loop": 1,
+"name": &"deadpan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_igip3")
+}],
+"loop": 1,
+"name": &"eyeroll",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_tsaw4")
+}],
+"loop": 1,
+"name": &"faceless",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_h0u0x")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_2r6e7")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_bctdw")
+}],
+"loop": 1,
+"name": &"panic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_byopa")
+}],
+"loop": 1,
+"name": &"prideful",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_bd4w2")
+}],
+"loop": 1,
+"name": &"shock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_0qrn5")
+}],
+"loop": 1,
+"name": &"smug",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_d1xq2")
+}],
+"loop": 1,
+"name": &"teasing",
+"speed": 5.0
+}]

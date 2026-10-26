@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="oo3 prototype, raw"
-run/main_scene="uid://brorlfs43mktk"
+run/main_scene="uid://cijwhix04dl0u"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

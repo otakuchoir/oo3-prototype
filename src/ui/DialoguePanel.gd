@@ -1,11 +1,12 @@
 extends Node2D
 
+@export var dialogue_path: String
 var line_num: int = 0
 var dialogue: DialogueData
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	self.dialogue = DialogueData.read_json('res://assets/dialogue/oo3-prototype.json')
+	self.dialogue = DialogueData.read_json(self.dialogue_path)
 	self.update()
 	#print('inputmap', InputMap.get_actions())
 

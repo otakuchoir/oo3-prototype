@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c80vmjwjj2ee1"]
+
+[ext_resource type="Script" uid="uid://tnbsde7bjb1s" path="res://src/ui/DialoguePanel.gd" id="1_dk3e1"]
+
+[node name="DialoguePanel" type="Node2D" unique_id=1383141309]
+script = ExtResource("1_dk3e1")
+dialogue_path = "res://assets/dialogue/oo3-prototype.json"
+
+[node name="bg" type="ColorRect" parent="." unique_id=955190593]
+offset_right = 1440.0
+offset_bottom = 291.0
+mouse_filter = 1
+color = Color(0.47, 0.47, 0.47, 0.8980392)
+metadata/_edit_use_anchors_ = true
+
+[node name="quote" type="Label" parent="." unique_id=764266693]
+offset_left = 80.0
+offset_top = 38.0
+offset_right = 284.0
+offset_bottom = 118.0
+text = "PLACEHOLDER: quote"
+
+[node name="speaker" type="Label" parent="." unique_id=1934005437]
+offset_left = 81.0
+offset_top = 3.0
+offset_right = 186.0
+offset_bottom = 26.0
+text = "PLACEHOLDER: speaker"
+
+[node name="line_id" type="Label" parent="." unique_id=1405687441]
+offset_left = 88.0
+offset_top = 256.0
+offset_right = 271.0
+offset_bottom = 279.0
+text = "PLACEHOLDER: line-id"
