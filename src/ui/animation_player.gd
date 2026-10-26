@@ -1,5 +1,7 @@
 extends AnimationPlayer
 
+@export var dialogue: DialoguePanel
+
 # Dictionary[String, Array[String]]: "Parse error: nested typed collections are not supported." booooo
 var animations_by_line_id: Dictionary[String, Array] = {}
 
@@ -10,7 +12,9 @@ func _init() -> void:
 		if parts.size() >= 2:
 			var id = parts[0]
 			animations_by_line_id.get_or_add(id, []).append(animname)
-	SignalBus.dialogue_line_updated.connect(_on_dialogue_line_updated)
+
+func _ready() -> void:
+	self.dialogue.line_updated.connect(_on_dialogue_line_updated)
 
 func _on_dialogue_line_updated(id: String) -> void:
 	var names = animations_by_line_id.get(id, [])

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cijwhix04dl0u"]
 
-[ext_resource type="PackedScene" uid="uid://brorlfs43mktk" path="res://res/oo3-prototype.tscn" id="1_rj6c6"]
+[ext_resource type="Script" uid="uid://rhc1ac3ytal" path="res://src/main.gd" id="1_wf6i0"]
 
-[node name="Main" type="Node" unique_id=1363005144]
+[node name="Root" type="Node" unique_id=1363005144]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=373245202]
 offset_right = 40.0
@@ -14,4 +14,5 @@ handle_input_locally = false
 size = Vector2i(1440, 1080)
 render_target_update_mode = 4
 
-[node name="oo3-prototype" parent="SubViewportContainer/SubViewport" unique_id=538847929 instance=ExtResource("1_rj6c6")]
+[node name="Main" type="Node" parent="SubViewportContainer/SubViewport" unique_id=1089165719]
+script = ExtResource("1_wf6i0")

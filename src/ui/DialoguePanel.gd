@@ -1,4 +1,6 @@
-extends Node2D
+class_name DialoguePanel extends Node2D
+
+signal line_updated(id: String)
 
 @export var dialogue_path: String
 var line_num: int = 0
@@ -17,7 +19,7 @@ func update() -> void:
 	$quote.text = self.line().quote
 	$speaker.text = self.line().speaker
 	$line_id.text = "Line ID: "+self.line().id
-	SignalBus.dialogue_line_updated.emit(self.line().id)
+	line_updated.emit(self.line().id)
 
 func incr_line_num(diff=1) -> void:
 	self.line_num = max(0, self.line_num + diff)
