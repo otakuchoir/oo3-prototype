@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b30tk02llvjpn"]
 
 [ext_resource type="Script" uid="uid://diu7w8bpychss" path="res://src/ui/Character.gd" id="1_pjt0s"]
-[ext_resource type="SpriteFrames" uid="uid://c266ilcxj62fk" path="res://res/Takeshi.tres" id="2_pjt0s"]
+[ext_resource type="SpriteFrames" uid="uid://c266ilcxj62fk" path="res://res/sprites/Takeshi.tres" id="2_pjt0s"]
 
 [node name="Character" type="Node2D" unique_id=1843213020]
 editor_description = "Animated character"

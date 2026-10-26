@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/ui/animation_player.gd" id="1_dky4w"]
 [ext_resource type="Texture2D" uid="uid://dby3pix7dnf2v" path="res://assets/oo2/backgrounds/alpine-landscape.png" id="2_ebwnf"]
-[ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://stage.tscn" id="3_fsnsj"]
-[ext_resource type="SpriteFrames" uid="uid://ch84u214eqv8v" path="res://res/Sanders.tres" id="5_bk86d"]
-[ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://dialogue_panel.tscn" id="6_bk86d"]
-[ext_resource type="PackedScene" uid="uid://b30tk02llvjpn" path="res://character.tscn" id="31_tgllc"]
-[ext_resource type="SpriteFrames" uid="uid://dteu3qqonwfti" path="res://res/Usagi.tres" id="32_nu71w"]
+[ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://res/stage.tscn" id="3_fsnsj"]
+[ext_resource type="SpriteFrames" uid="uid://ch84u214eqv8v" path="res://res/sprites/Sanders.tres" id="5_bk86d"]
+[ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://res/dialogue_panel.tscn" id="6_bk86d"]
+[ext_resource type="PackedScene" uid="uid://b30tk02llvjpn" path="res://res/character.tscn" id="31_tgllc"]
+[ext_resource type="SpriteFrames" uid="uid://dteu3qqonwfti" path="res://res/sprites/Usagi.tres" id="32_nu71w"]
 
 [sub_resource type="Animation" id="Animation_4w656"]
 resource_name = "RESET"
