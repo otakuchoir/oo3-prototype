@@ -1,7 +1,7 @@
 extends Node
 
 var start_cls = preload("res://res/oo3-prototype.tscn")
-var menu_cls = preload("res://res/menu.tscn")
+var menu_cls = preload("res://res/main_menu.tscn")
 
 func _ready() -> void:
 	var menu: MainMenu = menu_cls.instantiate()
