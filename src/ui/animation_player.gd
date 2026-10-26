@@ -18,7 +18,7 @@ func _ready() -> void:
 
 func _on_dialogue_line_updated(id: String) -> void:
 	var names = animations_by_line_id.get(id, [])
-	print("dialogue line updated", str(id), names)
+	print("dialogue line updated: %s, %s" % [id, names])
 	for animname in names:
-		print("play animation ", id, ", ", animname)
+		print("play animation %s, %s" % [id, animname])
 		self.play(animname)

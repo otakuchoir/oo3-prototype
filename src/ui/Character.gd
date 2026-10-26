@@ -39,7 +39,7 @@ func _ready() -> void:
 	self.focus = self.focus
 	self.anchor_x = self.anchor_x
 	self.anchor_y = self.anchor_y
-	print("anchor", $AnimatedSprite2D.offset)
+	#print("anchor", $AnimatedSprite2D.offset)
 
 func get_size() -> Vector2:
 	return self.sprite_frames.get_frame_texture(self.animation, 0).get_size() if self.sprite_frames else Vector2(0, 0)

@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d3amn7rwm83cc" path="res://src/main_menu.gd" id="1_gd53f"]
 
-[node name="MainMenu" type="Control" unique_id=1217631217]
-layout_mode = 3
+[node name="MarginContainer" type="MarginContainer" unique_id=1491788102]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -11,29 +10,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gd53f")
 
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1824472515]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer" unique_id=1491788102]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2033438288]
+propagate_maximum_size = true
 layout_mode = 2
+color = Color(0.13, 0.13, 0.13, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer" unique_id=608425056]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=608425056]
 layout_mode = 2
+alignment = 1
 
-[node name="Label" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer" unique_id=1703056198]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1703056198]
 layout_mode = 2
 text = "Otaku Oratorio 3 Prototype"
+horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer/VBoxContainer" unique_id=1173452013]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=1173452013]
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
 
-[node name="StartButton" type="LinkButton" parent="CenterContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=800633298]
+[node name="StartButton" type="LinkButton" parent="VBoxContainer/VBoxContainer" unique_id=800633298]
 layout_mode = 2
 text = "Start"
