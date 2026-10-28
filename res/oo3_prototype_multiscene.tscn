@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cavt1jks5a7aj"]
+
+[ext_resource type="Script" uid="uid://dvd6ebohms2yu" path="res://src/ui/multiscene.gd" id="1_so6ew"]
+[ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader.gd" id="2_ojwai"]
+
+[node name="oo3-prototype-multiscene" type="Node" unique_id=1811213170 node_paths=PackedStringArray("active_scene")]
+script = ExtResource("1_so6ew")
+active_scene = NodePath("Scenes/scene01")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1557793124]
+
+[node name="Scenes" type="Node" parent="." unique_id=19345510]
+process_mode = 4
+
+[node name="scene01" type="ColorRect" parent="Scenes" unique_id=1817721689]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 0, 0, 1)
+
+[node name="scene02" type="ColorRect" parent="Scenes" unique_id=1903233052]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 1, 1)
+
+[node name="scene03" type="ColorRect" parent="Scenes" unique_id=976638203]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 1, 0, 1)
+
+[node name="DialogueReader" type="Node" parent="." unique_id=517466445]
+script = ExtResource("2_ojwai")

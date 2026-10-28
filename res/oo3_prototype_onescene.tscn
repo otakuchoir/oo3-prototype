@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://brorlfs43mktk"]
 
 [ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/ui/animation_player.gd" id="1_dky4w"]
+[ext_resource type="Script" uid="uid://bogistv2g6lmt" path="res://src/scene.gd" id="1_m2ug0"]
 [ext_resource type="Texture2D" uid="uid://dby3pix7dnf2v" path="res://assets/oo2/backgrounds/alpine-landscape.png" id="2_ebwnf"]
 [ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://res/stage.tscn" id="3_fsnsj"]
 [ext_resource type="SpriteFrames" uid="uid://ch84u214eqv8v" path="res://res/sprites/Sanders.tres" id="5_bk86d"]
 [ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://res/dialogue_panel.tscn" id="6_bk86d"]
+[ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader.gd" id="8_210tq"]
 [ext_resource type="PackedScene" uid="uid://b30tk02llvjpn" path="res://res/character.tscn" id="31_tgllc"]
 [ext_resource type="SpriteFrames" uid="uid://dteu3qqonwfti" path="res://res/sprites/Usagi.tres" id="32_nu71w"]
 
@@ -513,18 +515,23 @@ _data = {
 &"oo3-prototype.006 takeshi hover": SubResource("Animation_vke2r")
 }
 
-[node name="oo3-prototype" type="Node" unique_id=538847929]
+[node name="oo3-prototype" type="Node" unique_id=538847929 node_paths=PackedStringArray("dialogue_reader")]
+script = ExtResource("1_m2ug0")
+dialogue_reader = NodePath("DialogueReader")
+
+[node name="DialogueReader" type="Node" parent="." unique_id=2082620901]
+script = ExtResource("8_210tq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=564061918 node_paths=PackedStringArray("dialogue")]
 root_node = NodePath(".")
 libraries/ = SubResource("AnimationLibrary_uypp3")
 script = ExtResource("1_dky4w")
-dialogue = NodePath("../Stage/DialoguePanel")
+dialogue = NodePath("../DialogueReader")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=2079344130 node_paths=PackedStringArray("dialogue")]
 libraries/ = SubResource("AnimationLibrary_uit24")
 script = ExtResource("1_dky4w")
-dialogue = NodePath("../Stage/DialoguePanel")
+dialogue = NodePath("../DialogueReader")
 
 [node name="bg" type="Sprite2D" parent="." unique_id=833898978]
 position = Vector2(720, 540)
