@@ -1,9 +1,9 @@
 extends Node
 
-var main_menu_cls = preload("res://res/main_menu.tscn")
-var pause_menu_cls = preload("res://res/pause_menu.tscn")
-var start_cls = preload("res://res/oo3_prototype_onescene.tscn")
-var start2_cls = preload("res://res/oo3_prototype_multiscene.tscn")
+var main_menu_cls = preload("res://src/main_menu/main_menu.tscn")
+var pause_menu_cls = preload("res://src/pause_menu/pause_menu.tscn")
+var start_cls = preload("res://src/show_prototype_onescene.tscn")
+var start2_cls = preload("res://src/show_prototype_multiscene.tscn")
 
 var main_menu: MainMenu
 var pause_menu: PauseMenu

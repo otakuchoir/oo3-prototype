@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://brorlfs43mktk"]
 
-[ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/ui/animation_player.gd" id="1_dky4w"]
-[ext_resource type="Script" uid="uid://bogistv2g6lmt" path="res://src/scene.gd" id="1_m2ug0"]
-[ext_resource type="Texture2D" uid="uid://dby3pix7dnf2v" path="res://assets/oo2/backgrounds/alpine-landscape.png" id="2_ebwnf"]
-[ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://res/stage.tscn" id="3_fsnsj"]
-[ext_resource type="SpriteFrames" uid="uid://ch84u214eqv8v" path="res://res/sprites/Sanders.tres" id="5_bk86d"]
-[ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://res/dialogue_panel.tscn" id="6_bk86d"]
-[ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader.gd" id="8_210tq"]
-[ext_resource type="PackedScene" uid="uid://b30tk02llvjpn" path="res://res/character.tscn" id="31_tgllc"]
-[ext_resource type="SpriteFrames" uid="uid://dteu3qqonwfti" path="res://res/sprites/Usagi.tres" id="32_nu71w"]
+[ext_resource type="Script" uid="uid://bogistv2g6lmt" path="res://src/scene/scene.gd" id="1_643ct"]
+[ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader/dialogue_reader.gd" id="2_xyk3d"]
+[ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/animation_player/animation_player.gd" id="3_eptlr"]
+[ext_resource type="Texture2D" uid="uid://dby3pix7dnf2v" path="res://assets/oo2/backgrounds/alpine-landscape.png" id="4_u65yv"]
+[ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://src/stage/stage.tscn" id="5_yvhc1"]
+[ext_resource type="PackedScene" uid="uid://b30tk02llvjpn" path="res://src/character/character.tscn" id="6_1gfl0"]
+[ext_resource type="SpriteFrames" uid="uid://dteu3qqonwfti" path="res://src/character/sprites/usagi.tres" id="7_r4tux"]
+[ext_resource type="SpriteFrames" uid="uid://ch84u214eqv8v" path="res://src/character/sprites/sanders.tres" id="8_g2wry"]
+[ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://src/dialogue_panel/dialogue_panel.tscn" id="9_7jcbo"]
 
 [sub_resource type="Animation" id="Animation_4w656"]
 resource_name = "RESET"
@@ -516,44 +516,44 @@ _data = {
 }
 
 [node name="oo3-prototype" type="Node" unique_id=538847929 node_paths=PackedStringArray("dialogue_reader")]
-script = ExtResource("1_m2ug0")
+script = ExtResource("1_643ct")
 dialogue_reader = NodePath("DialogueReader")
 
 [node name="DialogueReader" type="Node" parent="." unique_id=2082620901]
-script = ExtResource("8_210tq")
+script = ExtResource("2_xyk3d")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=564061918 node_paths=PackedStringArray("dialogue")]
 root_node = NodePath(".")
 libraries/ = SubResource("AnimationLibrary_uypp3")
-script = ExtResource("1_dky4w")
+script = ExtResource("3_eptlr")
 dialogue = NodePath("../DialogueReader")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=2079344130 node_paths=PackedStringArray("dialogue")]
 libraries/ = SubResource("AnimationLibrary_uit24")
-script = ExtResource("1_dky4w")
+script = ExtResource("3_eptlr")
 dialogue = NodePath("../DialogueReader")
 
 [node name="bg" type="Sprite2D" parent="." unique_id=833898978]
 position = Vector2(720, 540)
 scale = Vector2(0.703125, 0.703125)
-texture = ExtResource("2_ebwnf")
+texture = ExtResource("4_u65yv")
 
-[node name="Stage" parent="." unique_id=2103185016 instance=ExtResource("3_fsnsj")]
+[node name="Stage" parent="." unique_id=2103185016 instance=ExtResource("5_yvhc1")]
 
-[node name="Usagi" parent="Stage" unique_id=1843213020 instance=ExtResource("31_tgllc")]
+[node name="Usagi" parent="Stage" unique_id=1843213020 instance=ExtResource("6_1gfl0")]
 position = Vector2(1560, 0)
-sprite_frames = ExtResource("32_nu71w")
+sprite_frames = ExtResource("7_r4tux")
 animation = "neutral"
 
-[node name="Takeshi" parent="Stage" unique_id=649371214 instance=ExtResource("31_tgllc")]
+[node name="Takeshi" parent="Stage" unique_id=649371214 instance=ExtResource("6_1gfl0")]
 position = Vector2(1704, 0)
 animation = "neutral"
 
-[node name="Sanders" parent="Stage" unique_id=261750528 instance=ExtResource("31_tgllc")]
+[node name="Sanders" parent="Stage" unique_id=261750528 instance=ExtResource("6_1gfl0")]
 position = Vector2(-176, 0)
 scale = Vector2(-1, 1)
-sprite_frames = ExtResource("5_bk86d")
+sprite_frames = ExtResource("8_g2wry")
 animation = "smug"
 
-[node name="DialoguePanel" parent="Stage" unique_id=1383141309 instance=ExtResource("6_bk86d")]
+[node name="DialoguePanel" parent="Stage" unique_id=1383141309 instance=ExtResource("9_7jcbo")]
 editor_description = "Displays our show's dialogue, loaded from a JSON file"

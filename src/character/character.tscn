@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://b30tk02llvjpn"]
 
-[ext_resource type="Script" uid="uid://diu7w8bpychss" path="res://src/ui/Character.gd" id="1_pjt0s"]
-[ext_resource type="SpriteFrames" uid="uid://c266ilcxj62fk" path="res://res/sprites/Takeshi.tres" id="2_pjt0s"]
+[ext_resource type="Script" uid="uid://diu7w8bpychss" path="res://src/character/character.gd" id="1_8pnuo"]
+[ext_resource type="SpriteFrames" uid="uid://c266ilcxj62fk" path="res://src/character/sprites/takeshi.tres" id="2_1awkr"]
 
 [node name="Character" type="Node2D" unique_id=1843213020]
 editor_description = "Animated character"
-script = ExtResource("1_pjt0s")
-sprite_frames = ExtResource("2_pjt0s")
+script = ExtResource("1_8pnuo")
+sprite_frames = ExtResource("2_1awkr")
 animation = "angry-3"
 anchor_x = 0.5
 anchor_y = 1.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1646595621]
-sprite_frames = ExtResource("2_pjt0s")
+sprite_frames = ExtResource("2_1awkr")
 animation = &"angry-3"
 centered = false
 offset = Vector2(-253.5, -400)
