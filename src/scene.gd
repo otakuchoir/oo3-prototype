@@ -12,3 +12,4 @@ func _ready() -> void:
 	dialogue_reader.line_updated.connect(p.update_line)
 	dialogue_reader.end_dialogue.connect(quit_to_main_menu.emit)
 	p.update_line(dialogue_reader.current_line())
+	print('scene init: '+self.name)

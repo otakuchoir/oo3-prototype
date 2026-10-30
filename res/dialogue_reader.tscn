@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cbql6hai7de6y"]
+
+[ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader.gd" id="1_52erc"]
+
+[node name="DialogueReader" type="Node" unique_id=435016129]
+script = ExtResource("1_52erc")

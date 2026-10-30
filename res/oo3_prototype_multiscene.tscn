@@ -1,31 +1,117 @@
 [gd_scene format=3 uid="uid://cavt1jks5a7aj"]
 
 [ext_resource type="Script" uid="uid://dvd6ebohms2yu" path="res://src/ui/multiscene.gd" id="1_so6ew"]
-[ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader.gd" id="2_ojwai"]
+[ext_resource type="PackedScene" uid="uid://cbql6hai7de6y" path="res://res/dialogue_reader.tscn" id="2_2qcry"]
+[ext_resource type="Script" uid="uid://bogistv2g6lmt" path="res://src/scene.gd" id="3_f20og"]
+[ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://res/stage.tscn" id="3_uh0xl"]
+[ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/ui/animation_player.gd" id="3_wn1dd"]
+[ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://res/dialogue_panel.tscn" id="4_f20og"]
 
-[node name="oo3-prototype-multiscene" type="Node" unique_id=1811213170 node_paths=PackedStringArray("active_scene")]
+[sub_resource type="Animation" id="Animation_uh0xl"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:active_scene_name")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["scene01"]
+}
+
+[sub_resource type="Animation" id="Animation_f20og"]
+resource_name = "oo3-prototype.003"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:active_scene_name")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["scene02"]
+}
+
+[sub_resource type="Animation" id="Animation_wn1dd"]
+resource_name = "oo3-prototype.006"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:active_scene_name")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["scene03"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8erq8"]
+_data = {
+&"RESET": SubResource("Animation_uh0xl"),
+&"oo3-prototype.004": SubResource("Animation_f20og"),
+&"oo3-prototype.007": SubResource("Animation_wn1dd")
+}
+
+[node name="oo3-prototype-multiscene" type="Node" unique_id=1811213170]
 script = ExtResource("1_so6ew")
-active_scene = NodePath("Scenes/scene01")
+active_scene_name = "scene01"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1557793124]
+[node name="DialogueReader" parent="." unique_id=435016129 instance=ExtResource("2_2qcry")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1557793124 node_paths=PackedStringArray("dialogue")]
+libraries/ = SubResource("AnimationLibrary_8erq8")
+script = ExtResource("3_wn1dd")
+dialogue = NodePath("../DialogueReader")
 
 [node name="Scenes" type="Node" parent="." unique_id=19345510]
 process_mode = 4
 
-[node name="scene01" type="ColorRect" parent="Scenes" unique_id=1817721689]
+[node name="scene01" type="Node2D" parent="Scenes" unique_id=767756772 node_paths=PackedStringArray("dialogue_reader")]
+script = ExtResource("3_f20og")
+dialogue_reader = NodePath("../../DialogueReader")
+
+[node name="bg" type="ColorRect" parent="Scenes/scene01" unique_id=2015427821]
 offset_right = 40.0
 offset_bottom = 40.0
 color = Color(1, 0, 0, 1)
 
-[node name="scene02" type="ColorRect" parent="Scenes" unique_id=1903233052]
+[node name="Stage" parent="Scenes/scene01" unique_id=2103185016 instance=ExtResource("3_uh0xl")]
+
+[node name="DialoguePanel" parent="Scenes/scene01/Stage" unique_id=1383141309 instance=ExtResource("4_f20og")]
+editor_description = "Displays our show's dialogue, loaded from a JSON file"
+
+[node name="scene02" type="Node2D" parent="Scenes" unique_id=2120500704 node_paths=PackedStringArray("dialogue_reader")]
+script = ExtResource("3_f20og")
+dialogue_reader = NodePath("../../DialogueReader")
+
+[node name="bg" type="ColorRect" parent="Scenes/scene02" unique_id=39566841]
 offset_right = 40.0
 offset_bottom = 40.0
 color = Color(0, 0, 1, 1)
 
-[node name="scene03" type="ColorRect" parent="Scenes" unique_id=976638203]
+[node name="Stage" parent="Scenes/scene02" unique_id=340267025 instance=ExtResource("3_uh0xl")]
+
+[node name="DialoguePanel" parent="Scenes/scene02/Stage" unique_id=1467948894 instance=ExtResource("4_f20og")]
+editor_description = "Displays our show's dialogue, loaded from a JSON file"
+
+[node name="scene03" type="Node2D" parent="Scenes" unique_id=184174141 node_paths=PackedStringArray("dialogue_reader")]
+script = ExtResource("3_f20og")
+dialogue_reader = NodePath("../../DialogueReader")
+
+[node name="bg" type="ColorRect" parent="Scenes/scene03" unique_id=1575680380]
 offset_right = 40.0
 offset_bottom = 40.0
 color = Color(0, 1, 0, 1)
 
-[node name="DialogueReader" type="Node" parent="." unique_id=517466445]
-script = ExtResource("2_ojwai")
+[node name="Stage" parent="Scenes/scene03" unique_id=1959151834 instance=ExtResource("3_uh0xl")]
+
+[node name="DialoguePanel" parent="Scenes/scene03/Stage" unique_id=441613740 instance=ExtResource("4_f20og")]
+editor_description = "Displays our show's dialogue, loaded from a JSON file"

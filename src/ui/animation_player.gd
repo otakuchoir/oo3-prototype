@@ -9,9 +9,12 @@ var animations_by_line_id: Dictionary[String, Array] = {}
 func _init() -> void:
 	for animname in get_animation_list():
 		var parts = animname.split(" ", true, 1)
+		var id: String
 		if parts.size() >= 2:
-			var id = parts[0]
-			animations_by_line_id.get_or_add(id, []).append(animname)
+			id = parts[0]
+		else:
+			id = animname
+		animations_by_line_id.get_or_add(id, []).append(animname)
 
 func _ready() -> void:
 	self.dialogue.line_updated.connect(self.update_line)
