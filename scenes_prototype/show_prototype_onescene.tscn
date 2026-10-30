@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bogistv2g6lmt" path="res://src/scene/scene.gd" id="1_643ct"]
 [ext_resource type="Script" uid="uid://cok6rtahwd6ng" path="res://src/dialogue_reader/dialogue_reader.gd" id="2_xyk3d"]
-[ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/animation_player/animation_player.gd" id="3_eptlr"]
+[ext_resource type="PackedScene" uid="uid://gn6otyj5piog" path="res://src/dialogue_animation/dialogue_animation.tscn" id="3_wwhlt"]
 [ext_resource type="Texture2D" uid="uid://dby3pix7dnf2v" path="res://assets/oo2/backgrounds/alpine-landscape.png" id="4_u65yv"]
 [ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://src/stage/stage.tscn" id="5_yvhc1"]
 [ext_resource type="PackedScene" uid="uid://b30tk02llvjpn" path="res://src/character/character.tscn" id="6_1gfl0"]
@@ -10,7 +10,7 @@
 [ext_resource type="SpriteFrames" uid="uid://ch84u214eqv8v" path="res://src/character/sprites/sanders.tres" id="8_g2wry"]
 [ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://src/dialogue_panel/dialogue_panel.tscn" id="9_7jcbo"]
 
-[sub_resource type="Animation" id="Animation_4w656"]
+[sub_resource type="Animation" id="Animation_ecsbd"]
 resource_name = "RESET"
 length = 0.001
 tracks/0/type = "value"
@@ -193,8 +193,20 @@ tracks/14/keys = {
 "update": 0,
 "values": [Vector2(1560, 0)]
 }
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("../Stage/Takeshi:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1700.0]
+}
 
-[sub_resource type="Animation" id="Animation_a6jrf"]
+[sub_resource type="Animation" id="Animation_x4ff4"]
 resource_name = "RESET"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -233,7 +245,7 @@ tracks/2/keys = {
 "values": [1699.0272, 720.0]
 }
 
-[sub_resource type="Animation" id="Animation_xuqvo"]
+[sub_resource type="Animation" id="Animation_ulraj"]
 resource_name = "2 takeshi enter"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -320,7 +332,7 @@ tracks/6/keys = {
 "values": [Vector2(712, 0), Vector2(1700, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_e71vb"]
+[sub_resource type="Animation" id="Animation_1ts4i"]
 resource_name = "line004 takeshi enter"
 length = 3.0000000000000004
 tracks/0/type = "value"
@@ -386,17 +398,17 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../Stage/Takeshi:position")
+tracks/5/path = NodePath("../Stage/Takeshi:position:x")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1700, -100), Vector2(720, -100)]
+"values": [1700.0, 720.0]
 }
 
-[sub_resource type="Animation" id="Animation_rnkwl"]
+[sub_resource type="Animation" id="Animation_s3kmb"]
 resource_name = "line007 usagi enter"
 length = 2.0
 tracks/0/type = "value"
@@ -484,16 +496,16 @@ tracks/6/keys = {
 "values": [1699.0272, 720.0]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uypp3"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x4ff4"]
 _data = {
-&"RESET": SubResource("Animation_4w656"),
-&"oo3-prototype.001 usagi enter": SubResource("Animation_a6jrf"),
-&"oo3-prototype.003 sanders enter": SubResource("Animation_xuqvo"),
-&"oo3-prototype.006 takeshi enter": SubResource("Animation_e71vb"),
-&"oo3-prototype.008 usagi enter": SubResource("Animation_rnkwl")
+&"RESET": SubResource("Animation_ecsbd"),
+&"oo3-prototype.001 usagi enter": SubResource("Animation_x4ff4"),
+&"oo3-prototype.003 sanders enter": SubResource("Animation_ulraj"),
+&"oo3-prototype.006 takeshi enter": SubResource("Animation_1ts4i"),
+&"oo3-prototype.008 usagi enter": SubResource("Animation_s3kmb")
 }
 
-[sub_resource type="Animation" id="Animation_vke2r"]
+[sub_resource type="Animation" id="Animation_wwhlt"]
 resource_name = "oo3-prototype.006 takeshi hover"
 length = 2.0
 loop_mode = 1
@@ -510,28 +522,26 @@ tracks/0/keys = {
 "values": [-150.0, 50.0, -150.0]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uit24"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ecsbd"]
 _data = {
-&"oo3-prototype.006 takeshi hover": SubResource("Animation_vke2r")
+&"oo3-prototype.006 takeshi hover": SubResource("Animation_wwhlt")
 }
 
-[node name="oo3-prototype" type="Node" unique_id=538847929 node_paths=PackedStringArray("dialogue_reader")]
+[node name="ShowPrototypeOneScene" type="Node" unique_id=538847929 node_paths=PackedStringArray("dialogue_reader")]
 script = ExtResource("1_643ct")
 dialogue_reader = NodePath("DialogueReader")
 
 [node name="DialogueReader" type="Node" parent="." unique_id=2082620901]
 script = ExtResource("2_xyk3d")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=564061918 node_paths=PackedStringArray("dialogue")]
+[node name="DialogueAnimation" parent="." unique_id=649125867 node_paths=PackedStringArray("dialogue_reader") instance=ExtResource("3_wwhlt")]
 root_node = NodePath(".")
-libraries/ = SubResource("AnimationLibrary_uypp3")
-script = ExtResource("3_eptlr")
-dialogue = NodePath("../DialogueReader")
+libraries/ = SubResource("AnimationLibrary_x4ff4")
+dialogue_reader = NodePath("../DialogueReader")
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=2079344130 node_paths=PackedStringArray("dialogue")]
-libraries/ = SubResource("AnimationLibrary_uit24")
-script = ExtResource("3_eptlr")
-dialogue = NodePath("../DialogueReader")
+[node name="DialogueAnimation2" parent="." unique_id=1689870650 node_paths=PackedStringArray("dialogue_reader") instance=ExtResource("3_wwhlt")]
+libraries/ = SubResource("AnimationLibrary_ecsbd")
+dialogue_reader = NodePath("../DialogueReader")
 
 [node name="bg" type="Sprite2D" parent="." unique_id=833898978]
 position = Vector2(720, 540)

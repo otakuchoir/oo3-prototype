@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://cavt1jks5a7aj"]
+
+[ext_resource type="Script" uid="uid://dvd6ebohms2yu" path="res://src/show/show.gd" id="1_sef8l"]
+[ext_resource type="PackedScene" uid="uid://cbql6hai7de6y" path="res://src/dialogue_reader/dialogue_reader.tscn" id="2_rwm55"]
+[ext_resource type="PackedScene" uid="uid://bqj74upooyxib" path="res://scenes_prototype/scene_01.tscn" id="4_rsb80"]
+[ext_resource type="PackedScene" uid="uid://pd1muh8bnvr2" path="res://scenes_prototype/scene_02.tscn" id="5_8fmrf"]
+[ext_resource type="PackedScene" uid="uid://dmbosjnm5ngqr" path="res://scenes_prototype/scene_03.tscn" id="6_mmw8s"]
+[ext_resource type="PackedScene" uid="uid://gn6otyj5piog" path="res://src/dialogue_animation/dialogue_animation.tscn" id="7_rwm55"]
+
+[sub_resource type="Animation" id="Animation_sef8l"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:active_scene_name")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Scene01"]
+}
+
+[sub_resource type="Animation" id="Animation_rwm55"]
+resource_name = "oo3-prototype.003"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:active_scene_name")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Scene02"]
+}
+
+[sub_resource type="Animation" id="Animation_4w3gy"]
+resource_name = "oo3-prototype.006"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:active_scene_name")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Scene03"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rsb80"]
+_data = {
+&"RESET": SubResource("Animation_sef8l"),
+&"oo3-prototype.004": SubResource("Animation_rwm55"),
+&"oo3-prototype.007": SubResource("Animation_4w3gy")
+}
+
+[node name="ShowPrototypeMultiScene" type="Node" unique_id=1811213170]
+script = ExtResource("1_sef8l")
+active_scene_name = "Scene01"
+
+[node name="DialogueReader" parent="." unique_id=435016129 instance=ExtResource("2_rwm55")]
+
+[node name="DialogueAnimation" parent="." unique_id=126648242 node_paths=PackedStringArray("dialogue_reader") instance=ExtResource("7_rwm55")]
+libraries/ = SubResource("AnimationLibrary_rsb80")
+dialogue_reader = NodePath("../DialogueReader")
+
+[node name="Scenes" type="Node" parent="." unique_id=19345510]
+process_mode = 4
+
+[node name="Scene01" parent="Scenes" unique_id=1571466193 node_paths=PackedStringArray("dialogue_reader") instance=ExtResource("4_rsb80")]
+dialogue_reader = NodePath("../../DialogueReader")
+
+[node name="Scene02" parent="Scenes" unique_id=1966063381 node_paths=PackedStringArray("dialogue_reader") instance=ExtResource("5_8fmrf")]
+dialogue_reader = NodePath("../../DialogueReader")
+
+[node name="Scene03" parent="Scenes" unique_id=1891944940 node_paths=PackedStringArray("dialogue_reader") instance=ExtResource("6_mmw8s")]
+dialogue_reader = NodePath("../../DialogueReader")

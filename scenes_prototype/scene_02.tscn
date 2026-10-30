@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://pd1muh8bnvr2"]
+
+[ext_resource type="Script" uid="uid://bogistv2g6lmt" path="res://src/scene/scene.gd" id="1_mjbsw"]
+[ext_resource type="PackedScene" uid="uid://bvpql2j20kxvr" path="res://src/stage/stage.tscn" id="2_61f44"]
+[ext_resource type="PackedScene" uid="uid://c80vmjwjj2ee1" path="res://src/dialogue_panel/dialogue_panel.tscn" id="3_j17ip"]
+
+[node name="scene02" type="Node2D" unique_id=1966063381 node_paths=PackedStringArray("dialogue_reader")]
+script = ExtResource("1_mjbsw")
+dialogue_reader = NodePath("")
+
+[node name="bg" type="ColorRect" parent="." unique_id=1955382665]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 1, 1)
+
+[node name="Stage" parent="." unique_id=2103185016 instance=ExtResource("2_61f44")]
+
+[node name="DialoguePanel" parent="Stage" unique_id=1383141309 instance=ExtResource("3_j17ip")]
+editor_description = "Displays our show's dialogue, loaded from a JSON file"
