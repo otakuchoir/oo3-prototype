@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://diu7w8bpychss" path="res://src/character/character.gd" id="1_8pnuo"]
 [ext_resource type="SpriteFrames" uid="uid://c266ilcxj62fk" path="res://src/character/sprites/takeshi.tres" id="2_1awkr"]
+[ext_resource type="Script" uid="uid://xft8y0076xqm" path="res://src/focusable/focusable.gd" id="3_8mo58"]
 
 [node name="Character" type="Node2D" unique_id=1843213020]
 editor_description = "Animated character"
@@ -11,7 +12,10 @@ animation = "angry-3"
 anchor_x = 0.5
 anchor_y = 1.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1646595621]
+[node name="Focusable" type="Node2D" parent="." unique_id=245112232]
+script = ExtResource("3_8mo58")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Focusable" unique_id=1646595621]
 sprite_frames = ExtResource("2_1awkr")
 animation = &"angry-3"
 centered = false

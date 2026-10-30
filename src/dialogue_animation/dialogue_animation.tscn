@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gn6otyj5piog"]
 
-[ext_resource type="Script" uid="uid://2k378kcqmanh" path="res://src/dialogue_animation/dialogue_animation.gd" id="1_8inmx"]
+[ext_resource type="Script" uid="uid://cew27jvr33j1d" path="res://src/dialogue_animation/dialogue_animation.gd" id="1_8inmx"]
 
 [node name="DialogueAnimation" type="AnimationPlayer" unique_id=649125867]
 editor_description = "Trigger animations when reaching specific lines of dialogue."

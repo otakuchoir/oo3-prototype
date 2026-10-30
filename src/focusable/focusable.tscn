@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://mdrw1h1s1dpu"]
+
+[ext_resource type="Script" uid="uid://xft8y0076xqm" path="res://src/focusable/focusable.gd" id="1_2lquc"]
+
+[node name="Focusable" type="Node" unique_id=338965617]
+script = ExtResource("1_2lquc")

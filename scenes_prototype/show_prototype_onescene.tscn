@@ -53,7 +53,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("../Stage/Takeshi/AnimatedSprite2D:position:y")
+tracks/3/path = NodePath("../Stage/Takeshi:position:y")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -65,7 +65,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("../Stage/Takeshi/AnimatedSprite2D:animation")
+tracks/4/path = NodePath("../Stage/Takeshi:animation")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -125,7 +125,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("../Stage/Sanders/AnimatedSprite2D:animation")
+tracks/9/path = NodePath("../Stage/Sanders:animation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -558,16 +558,19 @@ texture = ExtResource("4_u65yv")
 position = Vector2(1560, 0)
 sprite_frames = ExtResource("7_r4tux")
 animation = "neutral"
+autofocus_on_speaker = Array[String](["Usagi Kitadani"])
 
 [node name="Takeshi" parent="Scenes/TheScene/Stage" unique_id=649371214 instance=ExtResource("6_1gfl0")]
 position = Vector2(1704, 0)
 animation = "neutral"
+autofocus_on_speaker = Array[String](["Takeshi Williamson"])
 
 [node name="Sanders" parent="Scenes/TheScene/Stage" unique_id=261750528 instance=ExtResource("6_1gfl0")]
 position = Vector2(-176, 0)
 scale = Vector2(-1, 1)
 sprite_frames = ExtResource("8_g2wry")
-animation = "smug"
+animation = "neutral"
+autofocus_on_speaker = Array[String](["George Sanders"])
 
 [node name="DialoguePanel" parent="Scenes/TheScene/Stage" unique_id=1383141309 instance=ExtResource("9_7jcbo")]
 editor_description = "Displays our show's dialogue, loaded from a JSON file"

@@ -4,7 +4,7 @@
 		 {"type": "label", "label": "oo3-prototype"}
 		,{"type": "quote", "id": "001", "speaker": "Usagi Kitadani", "quote": "This scene was made without writing any animation code!"}
 		,{"type": "quote", "id": "002", "speaker": "Usagi Kitadani", "quote": "Instead, this was made in Godot's animation editor. It's a prototype showing we can make all of OO3's VN this way."}
-		,{"type": "quote", "id": "003", "speaker": "George Sanders", "quote": "The editor makes animations with timelines and keyframes and other clickable things. It might look familiar if you've edited videos before. (Evan hasn't!)"}
+		,{"type": "quote", "id": "003", "speaker": "George Sanders", "quote": "The editor makes animations with timelines and keyframes and other clickable things. It might look familiar if you've edited videos before."}
 		,{"type": "quote", "id": "004", "speaker": "George Sanders", "quote": "This will help Evan do a better job of VN animation than last year. But more importantly, you - yes, you - can now help animate the VN without writing any code!"}
 		,{"type": "quote", "id": "005", "speaker": "George Sanders", "quote": "There's still some code driving the project, but far less than last year. You can make entire scenes without writing any code. Here's how that works:"}
 		,{"type": "quote", "id": "006", "speaker": "Takeshi Williamson", "quote": "Each line of dialogue shows an ID number at the bottom left of the screen. (Evan will set up all the dialogue. It's JSON data files.)"}
