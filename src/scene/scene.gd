@@ -1,13 +1,19 @@
-extends Node
+class_name Scene extends Node
 
-@export var dialogue_reader: DialogueReader
+signal incr_line
+signal decr_line
+
+var aps: Array[AnimationPlayer]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var r = dialogue_reader
-	var p = $Stage/DialoguePanel
-	p.incr_line.connect(r.incr_line)
-	p.decr_line.connect(r.decr_line)
-	r.line_updated.connect(p.update_line)
-	p.update_line(r.current_line())
+	aps.assign(find_children("", "AnimationPlayer"))
+	$Stage/DialoguePanel.incr_line.connect(func(): incr_line.emit())
+	$Stage/DialoguePanel.decr_line.connect(func(): decr_line.emit())
+	#p.update_line(r.current_line())
 	print('scene init: '+self.name)
+
+func line_updated(line: DialogueLine) -> void:
+	$Stage/DialoguePanel.update_line(line)
+	for ap in aps:
+		ap.update_line(line)
